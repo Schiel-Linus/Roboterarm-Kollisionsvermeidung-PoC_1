@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<robot name="poc_1_only_cad_step_03" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find poc_1_only_cad_step_03_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find poc_1_only_cad_step_03_description)/urdf/poc_1_only_cad_step_03.trans" />
+<xacro:include filename="$(find poc_1_only_cad_step_03_description)/urdf/poc_1_only_cad_step_03.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="1.470482057173849e-17 0.0 0.035" rpy="0 0 0"/>
+    <mass value="9.710466542705198"/>
+    <inertia ixx="0.01762" iyy="0.01762" izz="0.027311" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BASIS_OBERPLATTE_1">
+  <inertial>
+    <origin xyz="1.344893249855621e-17 1.344893249855621e-17 0.0229564682932029" rpy="0 0 0"/>
+    <mass value="5.3086246136516335"/>
+    <inertia ixx="0.009432" iyy="0.008228" izz="0.014187" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.07" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/BASIS_OBERPLATTE_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.07" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/BASIS_OBERPLATTE_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_SCHULTER_1">
+  <inertial>
+    <origin xyz="-2.031275409432855e-08 -0.05000000209276695 0.09583551922085731" rpy="0 0 0"/>
+    <mass value="8.802222170078334"/>
+    <inertia ixx="0.049352" iyy="0.051702" izz="0.007579" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.05 -0.137" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/_SCHULTER_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.05 -0.137" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/_SCHULTER_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ELLBOGEN_1">
+  <inertial>
+    <origin xyz="-0.05542396440306715 -0.029999971957863022 -1.8519978162157003e-07" rpy="0 0 0"/>
+    <mass value="3.176667783695616"/>
+    <inertia ixx="0.004806" iyy="0.005446" izz="0.008554" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.03 -0.334365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/ELLBOGEN_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.03 -0.334365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/ELLBOGEN_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HANDGELENK_DREHUNG_1">
+  <inertial>
+    <origin xyz="-0.03956168432616332 -1.7267454638072167e-09 -1.864576950616481e-07" rpy="0 0 0"/>
+    <mass value="3.3045703933674435"/>
+    <inertia ixx="0.004176" iyy="0.003201" izz="0.00553" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105 -0.0 -0.334365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/HANDGELENK_DREHUNG_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105 -0.0 -0.334365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/HANDGELENK_DREHUNG_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HANDGELENK_NEIGUNG_1">
+  <inertial>
+    <origin xyz="-0.01215661231527479 -0.05000000086172498 -1.9214098229136667e-07" rpy="0 0 0"/>
+    <mass value="0.8013163276799407"/>
+    <inertia ixx="0.000251" iyy="0.000405" izz="0.000515" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.175 -0.05 -0.334365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/HANDGELENK_NEIGUNG_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.175 -0.05 -0.334365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://poc_1_only_cad_step_03_description/meshes/HANDGELENK_NEIGUNG_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Umdrehung 1" type="continuous">
+  <origin xyz="0.0 0.0 0.07" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="BASIS_OBERPLATTE_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Umdrehung 2" type="continuous">
+  <origin xyz="0.0 0.05 0.067" rpy="0 0 0"/>
+  <parent link="BASIS_OBERPLATTE_1"/>
+  <child link="_SCHULTER_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Umdrehung 3" type="continuous">
+  <origin xyz="0.0 -0.02 0.197365" rpy="0 0 0"/>
+  <parent link="_SCHULTER_1"/>
+  <child link="ELLBOGEN_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Umdrehung 4" type="continuous">
+  <origin xyz="-0.105 -0.03 0.0" rpy="0 0 0"/>
+  <parent link="ELLBOGEN_1"/>
+  <child link="HANDGELENK_DREHUNG_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Umdrehung 5" type="continuous">
+  <origin xyz="-0.07 0.05 0.0" rpy="0 0 0"/>
+  <parent link="HANDGELENK_DREHUNG_1"/>
+  <child link="HANDGELENK_NEIGUNG_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+</robot>
